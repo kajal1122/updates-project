@@ -2,25 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Home.html</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename = 'css/style.css')}}">
   </head>
   <body>
-    <h2>Weather</h2>
-    <form>
-      <input type="text" name="weather" placeholder="city">
-      <input type="submit" name="" value="search">
-    </form>
-    <p>{{ weather.city}}, {{weather.country}}</p>
-    <p>{{ weather.description}}, {{weather.temperature}} &#8451;</p>
-    <h2>Fashion Articles</h2>
-    <form>
-      <input type="text" name="magazine" placeholder="whowhatwear, fm, gqmen">
-      <input type="submit" name="" value="Read">
-    </form>
-    {% for article in articles %}
-          <h2 ><a href="{{article.link}}">{{article.title}}</a></h2>
-          <p>{{article.description}}</p>
-          <hr>
-    {% endfor %}
+    <div class="heading">
+      <h1>Fashion and Weather Updates</h1>
+    </div>
+    <div class="content">
+
+      <h2>Weather</h2>
+      <form>
+        <input type="text" name="weather" placeholder="city">
+        <input type="submit" name="" value="search">
+      </form>
+      <p>{{ weather.city}}, {{weather.country}}</p>
+      <p>{{ weather.description}}, {{weather.temperature}} &#8451;</p>
+      <h2>Fashion Articles</h2>
+      <form>
+        <input type="text" name="magazine" placeholder="whowhatwear, fm, gqmen">
+        <input type="submit" name="" value="Read">
+      </form>
+      {% for article in articles %}
+            <h2 ><a href="{{article.link}}">{{article.title}}</a></h2>
+            <p>{{article.description}}</p>
+            <hr>
+      {% endfor %}
+    </div>
+
   </body>
 </html>

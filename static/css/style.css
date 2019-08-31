@@ -1,0 +1,21 @@
+body
+{
+  background-color: white;
+  font-family: sans-serif;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.content
+{
+  background-color: lightgrey;
+
+  padding-left: 10px;
+
+}
+
+.heading
+{
+  background-color: lightsteelblue;
+}
