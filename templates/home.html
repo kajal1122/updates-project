@@ -5,6 +5,13 @@
     <title>Home.html</title>
   </head>
   <body>
+    <h2>Weather</h2>
+    <form>
+      <input type="text" name="weather" placeholder="city">
+      <input type="submit" name="" value="search">
+    </form>
+    <p>{{ weather.city}}, {{weather.country}}</p>
+    <p>{{ weather.description}}, {{weather.temperature}} &#8451;</p>
     <h2>Fashion Articles</h2>
     <form>
       <input type="text" name="magazine" placeholder="whowhatwear, fm, gqmen">
